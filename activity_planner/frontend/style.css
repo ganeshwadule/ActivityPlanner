@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #504c4c82; */
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    background-color: #504c4c82;
+    font-family: cursive;
+   
+}
+
+.main {
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #27262682;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+    padding: 0px 30px;
+}
+
+.logo {
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.login-btn button {
+    border: none;
+    color: rgb(27, 27, 27);
+    font-weight: bold;
+    font-size: 15px;
+    padding: 7px 20px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.signup-container {
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:30px;
+    margin: 95px auto;
+    margin-top: 45px;
+    margin-bottom: 140px;
+}
+
+.signup-container .signup-card{
+    width: 60%;
+    height: 300px;
+    /* border: 2px solid white; */
+    margin: auto;
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    /* gap:10px; */
+    /* padding-bottom: 20px; */
+    border: 1px solid white;
+    border-radius: 12px;
+    background-color: #333;
+    box-shadow:1px 1px 7px white;
+}
+
+
+.signup-container .signup-card input{
+    /* width: 260px; */
+    padding: 10px 30px;
+    margin:  20px auto ;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    
+}
+.signup-container .signup-card button{
+    /* width: 260px; */
+    padding: 10px 20px;
+    /* margin: 0px 90px; */
+    width: 100px;
+    margin: 0px auto ;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
