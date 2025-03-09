@@ -18,7 +18,7 @@
             <div class="signup-card">
                 <input type="text" name="" id="email" placeholder="Enter email">
                 <input type="password" name="" id="password" placeholder="Enter password" >
-                <button id="signup" onclick="SignUp()">SignUp</button>
+                <button id="signup" onclick="this.innerText === 'SignUp' ? SignUp() : Login()">SignUp</button>
                 <div class="message" style="text-align: center;color: white"></div>
             </div>
         </div>

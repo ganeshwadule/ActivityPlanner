@@ -1,3 +1,5 @@
+const { readFile } = require("fs");
+
 const fs = require("fs").promises
 
 // read data from file
@@ -19,10 +21,14 @@ const addUser = async(mail,password)=>{
 
     const updatedFileData = JSON.stringify(fileData,null,4);
     await fs.writeFile("users.json",updatedFileData)
-    return(true);
+    return true;
     
 }
 
+const Users = async()=>{
+        const data = await fs.readFile("users.json","utf-8")
+        return JSON.parse(data)
+}
 
-module.exports  = {addUser}
+module.exports  = {addUser,Users}
 // addUser("uniquegbw09@gmail.com","301183")
