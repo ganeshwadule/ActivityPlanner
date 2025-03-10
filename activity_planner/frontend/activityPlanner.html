@@ -6,6 +6,17 @@
     <title>Activity Planner</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Manage your activities efficiently</h1>
+    <h1 style="text-align: center;" id="welcome-user"></h1>
+    <h2 style="text-align: center;">Manage your activities efficiently</h2>
 </body>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+  const email = localStorage.getItem("userEmail");
+  if (email) {
+    document.querySelector("#welcome-user").innerHTML = "welcome "+email;
+  }
+});
+</script>
 </html>

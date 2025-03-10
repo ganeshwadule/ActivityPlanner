@@ -10,6 +10,7 @@ app.get("/", (req, res) => {
   res.status(200).json({ message: "Server is running" });
 });
 
+
 app.post("/api/user", async (req, res) => {
   const response = await addUser(req.body.email, req.body.password);
   if (!response) {
@@ -17,6 +18,8 @@ app.post("/api/user", async (req, res) => {
   }
   return res.status(201).json({ message: response });
 });
+
+
 
 app.post("/api/user/login", async (req, res) => {
   const User = await Users();
@@ -34,8 +37,10 @@ app.post("/api/user/login", async (req, res) => {
   return res.status(201).json({ message: "success" });
 });
 
-app.get("api/user/:email",(req,res)=>{
 
+
+app.get("api/user/:email",(req,res)=>{
+    
 })
 
 

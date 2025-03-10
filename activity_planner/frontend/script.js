@@ -55,10 +55,12 @@ async function Login() {
 
       const data = await response.json();
       if(response.status === 201){
-        window.location.href = "activityPlanner.html"
+        localStorage.setItem("userEmail", emailData.split("@")[0]); // Save email
+        window.location.href = "activityPlanner.html";
+        
       }
       else{
-
+        
         document.querySelector(".message").innerHTML = data.message;
       }
 
@@ -68,6 +70,8 @@ async function Login() {
   }
 
 }
+
+
 
 
 
